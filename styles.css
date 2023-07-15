@@ -1,35 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Dancing+Script&family=Fasthand&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@300&family=Share+Tech+Mono&family=VT323&display=swap');
+
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 :root{
     --cor1: #184934;
     --cor2: #297A41;
     --cor3: #2A7E4F;
-    --cor4: #FCFBFE;
+    --cor4: #3CB450;
+    --cor5: #FCFBFE;
+}
+
+@media screen and (min-width: 1024px) {
+}
+@media screen and (max-width: 1023px){
+}
+
+h1, h2{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: stretch;
+    align-content: space-between;
+    background-color: var(--cor2);
+    background-size: cover;
 }
 
 .container1{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
     background-color: var(--cor1);
+    width: 300px;
+    height: 375%;
+}
+.container1 .img{
+    width: 150px;
+    height: 150px;
+    border: 2px solid var(--cor5);
+    border-radius: 50%;
+}
+.container1 h1 a{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--cor5);
 }
 
-main{
+.container1 a:hover {
+    color: var(--cor4);
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
     background-color: var(--cor2);
+    width: 1100px;
+    height: 100%;
 }
 
-.card1,
-.card2,
-.card3,
-.card4,
-.card5,
-.card6 {
-    background-color: var(--cor3);
+.container2 .caixa1, .caixa2{
+    display: flex;
+    flex-direction: column;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
+    width: 15%;
+    margin: 1% 1%;
+    padding: 1% 1%;
+    display: flex;
+    background-color: var(--cor4);
+    flex-direction: column;
+    border-radius: 10%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container3 a{
+    color: var(--cor5);
+}
+
+.container3 a:hover{
+    color: var(--cor1);
 }
 
 button {
     position: fixed;
     bottom: 0;
     right: 0;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+}
+
+button:hover{
+    background-color: rgb(175, 240, 197);
 }
